@@ -7,7 +7,7 @@ import { appContext } from "@/context/Context";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-function page() {
+function Page() {
   const [selectedImages, setSelectedImages] = useState([]);
 
   // Function to handle image upload and create preview
@@ -389,4 +389,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
