@@ -1,0 +1,8 @@
+.banner{
+  background-color:#eee;
+  height:500px;
+  max-width:1300px;
+  margin:0 auto;
+ border-radius: 30px;  
+ padding: 2em;
+}

@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
+import Context from "@/context/Context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Context>
+          <Toaster position="top-right" richColors expand={true} />
+          {children}
+        </Context>
+      </body>
     </html>
   );
 }
